@@ -17,11 +17,10 @@ router.get('/', async (req, res, next) => {
         const header = req.header(contextHeader);
 
         const isZoom = header && getAppContext(header);
-        const name = isZoom ? 'Zoom' : 'Browser';
 
         return res.render('index', {
             isZoom,
-            title: `Hello ${name}`,
+            title: `Lift My Life`,
         });
     } catch (e) {
         next(handleError(e));

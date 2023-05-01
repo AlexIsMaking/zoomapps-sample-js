@@ -7,6 +7,7 @@ import zoomSdk from '@zoom/appssdk';
             capabilities: [
                 /* Add Capabilities Here */
                 'shareApp',
+                'openUrl',
             ],
         });
 
